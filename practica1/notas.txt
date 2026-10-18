@@ -1,0 +1,1 @@
+Carpeta para la entrega de la practica1. No olvidar hacer git add/commit/push para entregar.
