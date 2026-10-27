@@ -1170,17 +1170,17 @@ cut<span class="hljs-selector-class">.c</span>      help<span class="hljs-select
 
         <div class="cell">
             <div class="question"></div>
-            <input type="text" name="cell197" id="cell197" value="">
+            <input type="text" name="cell197" id="cell197" value="git config --global user.name &quot;Ruben Aleman [Belando]&quot;">
         </div>
         
         <div class="cell">
             <div class="question"></div>
-            <input type="text" name="cell198" id="cell198" value="">
+            <input type="text" name="cell198" id="cell198" value="git config --global user.email &quot;ruben.aleman@edu.upct.es&quot;">
         </div>
         
         <div class="cell">
             <div class="question">Muestra el contenido del fichero<br>de configuración *GLOBAL* de git (~/.gitconfig)</div>
-            <input type="text" name="cell199" id="cell199" value="">
+            <input type="text" name="cell199" id="cell199" value="cat ~/.gitconfig">
         </div>
         <div class="cell markdown"><p>SALIDA (deberías ver nombre y apellido):</p>
 
@@ -1194,17 +1194,17 @@ cut<span class="hljs-selector-class">.c</span>      help<span class="hljs-select
 
         <div class="cell">
             <div class="question">Crea un directorio llamado "mydir"</div>
-            <input type="text" name="cell201" id="cell201" value="">
+            <input type="text" name="cell201" id="cell201" value="mkdir mydir">
         </div>
         
         <div class="cell">
             <div class="question">Cámbiate al directorio que acabas de crear</div>
-            <input type="text" name="cell202" id="cell202" value="">
+            <input type="text" name="cell202" id="cell202" value="cd mydir">
         </div>
         
         <div class="cell">
             <div class="question">Crea un repositorio vacío</div>
-            <input type="text" name="cell203" id="cell203" value="">
+            <input type="text" name="cell203" id="cell203" value="git init">
         </div>
         <div class="cell markdown"><p>SALIDA:</p>
 
@@ -1232,7 +1232,7 @@ Inicializado repositorio Git vacío en /home/alumno/mydir/.git/
         
         <div class="cell">
             <div class="question">Muestra el contenido del fichero git-commands</div>
-            <input type="text" name="cell206" id="cell206" value="">
+            <input type="text" name="cell206" id="cell206" value="cat git-commands">
         </div>
         <div class="cell markdown"><p>SALIDA:</p>
 
@@ -1244,7 +1244,7 @@ Inicializado repositorio Git vacío en /home/alumno/mydir/.git/
 
         <div class="cell">
             <div class="question">Muestra el estado del árbol de trabajo</div>
-            <input type="text" name="cell208" id="cell208" value="">
+            <input type="text" name="cell208" id="cell208" value="git status">
         </div>
         <div class="cell markdown"><p>SALIDA:</p>
 
@@ -1266,12 +1266,12 @@ Archivos <span class="hljs-keyword">sin</span> seguimiento:
 
         <div class="cell">
             <div class="question">Añade el fichero "git-commands" al índice</div>
-            <input type="text" name="cell210" id="cell210" value="">
+            <input type="text" name="cell210" id="cell210" value="git add git-commands">
         </div>
         
         <div class="cell">
             <div class="question">Muestra el estado del árbol de trabajo otra vez</div>
-            <input type="text" name="cell211" id="cell211" value="">
+            <input type="text" name="cell211" id="cell211" value="git status">
         </div>
         <div class="cell markdown"><p>SALIDA:</p>
 
@@ -1289,7 +1289,7 @@ Cambios <span class="hljs-selector-tag">a</span> ser confirmados:
 
         <div class="cell">
             <div class="question">Confirma los cambios del índice al repositorio con el mensaje "Añadiendo fichero con lista de comandos"</div>
-            <input type="text" name="cell213" id="cell213" value="">
+            <input type="text" name="cell213" id="cell213" value="git commit -m &quot;Añadiendo fichero con lista de comandos&quot;">
         </div>
         <div class="cell markdown"><p>SALIDA:</p>
 
@@ -1303,7 +1303,7 @@ Cambios <span class="hljs-selector-tag">a</span> ser confirmados:
 
         <div class="cell">
             <div class="question">Muestra el historial de commits del repositorio</div>
-            <input type="text" name="cell215" id="cell215" value="">
+            <input type="text" name="cell215" id="cell215" value="git log">
         </div>
         <div class="cell markdown"><p>SALIDA:</p>
 
@@ -1324,7 +1324,7 @@ Author: Alumno Apellido <span class="hljs-operator">&lt;</span>alumno<span class
         
         <div class="cell">
             <div class="question">Muestra el contenido del fichero "git-commands"</div>
-            <input type="text" name="cell218" id="cell218" value="">
+            <input type="text" name="cell218" id="cell218" value="cat git-commands">
         </div>
         <div class="cell markdown"><p>SALIDA:</p>
 
@@ -1339,7 +1339,7 @@ Author: Alumno Apellido <span class="hljs-operator">&lt;</span>alumno<span class
 
         <div class="cell">
             <div class="question">Muestra las diferencias entre la versión de<br>"git-commands" en el repositorio y<br>en el árbol de trabajo</div>
-            <input type="text" name="cell220" id="cell220" value="">
+            <input type="text" name="cell220" id="cell220" value="git diff">
         </div>
         <div class="cell markdown"><p>SALIDA:</p>
 
@@ -1360,12 +1360,12 @@ index <span class="hljs-number">5</span>b28c00..<span class="hljs-number">9451</
 
         <div class="cell">
             <div class="question">Añade los cambios en "git-commands" al índice</div>
-            <input type="text" name="cell222" id="cell222" value="">
+            <input type="text" name="cell222" id="cell222" value="git add git-commands">
         </div>
         
         <div class="cell">
             <div class="question">Muestra las diferencias entre el árbol<br>de trabajo y el índice</div>
-            <input type="text" name="cell223" id="cell223" value="">
+            <input type="text" name="cell223" id="cell223" value="git diff">
         </div>
         <div class="cell markdown"><ul>
 <li>¿Por qué el comando anterior no muestra nada?</li>
@@ -1376,12 +1376,12 @@ index <span class="hljs-number">5</span>b28c00..<span class="hljs-number">9451</
 
         <div class="cell">
             <div class="question"></div>
-            <input type="text" name="cell225" id="cell225" value="">
+            <input type="text" name="cell225" id="cell225" value="Porque al ejectuar git add, los cambios pasan al índice haciendo que el árbol de trabajo y el índice sean iguales. ">
         </div>
         
         <div class="cell">
             <div class="question">Muestra las diferencias entre el índice<br>y el repositorio  (los cambios que<br>son candidatos a ser confirmados)</div>
-            <input type="text" name="cell226" id="cell226" value="">
+            <input type="text" name="cell226" id="cell226" value="git diff --staged">
         </div>
         <div class="cell markdown"><p>SALIDA:</p>
 
