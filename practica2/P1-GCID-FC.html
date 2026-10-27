@@ -701,7 +701,7 @@ cheetah_strolling.mp4         cliff_waterfall.mp4        desert.mp4          mag
         
         <div class="cell">
             <div class="question">Lista todos los ficheros situados en "jpg"<br>cuyo nombre tenga exactamente 7 caracteres<br>seguidos de ".jpg"</div>
-            <input type="text" name="cell116" id="cell116" value="">
+            <input type="text" name="cell116" id="cell116" value="ls jpg/???????.jpg">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -713,7 +713,7 @@ cheetah_strolling.mp4         cliff_waterfall.mp4        desert.mp4          mag
 
         <div class="cell">
             <div class="question">Lista todos los ficheros situados en "jpg"<br>cuyo nombre contenga la cadena "le"</div>
-            <input type="text" name="cell118" id="cell118" value="">
+            <input type="text" name="cell118" id="cell118" value="ls jpg/*le*.jpg">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -726,7 +726,7 @@ jpg/eagle_closeup.jpg          jpg/lemon_patern_wallpaper.jpg
 
         <div class="cell">
             <div class="question">Lista todos los ficheros situados en "jpg"<br>cuyo nombre comience con dos caracteres cualquiera<br>seguidos de la cadena "sort"</div>
-            <input type="text" name="cell120" id="cell120" value="">
+            <input type="text" name="cell120" id="cell120" value="s jpgls jpg/??sort*.jpg">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -738,7 +738,7 @@ jpg/eagle_closeup.jpg          jpg/lemon_patern_wallpaper.jpg
 
         <div class="cell">
             <div class="question">Lista todos los ficheros situados en "jpg"<br>cuyo nombre NO comienze por los caracteres<br>de la 'b' a la 't'</div>
-            <input type="text" name="cell122" id="cell122" value="">
+            <input type="text" name="cell122" id="cell122" value="ls jpg/[!b-t]*">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -752,7 +752,7 @@ jpg/waterfall_long_exposure_2.jpg
 
         <div class="cell">
             <div class="question">Lista todos los ficheros situados en cualquier subdirectorio<br>inmediato de "image" (bmp, gif, etc.) cuyo nombre contenga al menos un carácter numérico</div>
-            <input type="text" name="cell124" id="cell124" value="">
+            <input type="text" name="cell124" id="cell124" value="ls */*[0-9]*">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -764,7 +764,7 @@ jpg/waterfall_long_exposure_2.jpg
 
         <div class="cell">
             <div class="question">Lista todos los ficheros situados en cualquier subdirectorio<br>inmediato de "image" (bmp, gif, etc.) cuyo nombre contenga<br>las cadenas "fall" o "bri", y acaben con la letra 'g' o 'f'</div>
-            <input type="text" name="cell126" id="cell126" value="">
+            <input type="text" name="cell126" id="cell126" value="ls */*{fall,bri}*[gf]">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -777,12 +777,12 @@ jpg/waterfall_long_exposure.jpg    tiff/rolled_fabric_stack.tiff
 
         <div class="cell">
             <div class="question">Cámbiate al directorio padre</div>
-            <input type="text" name="cell128" id="cell128" value="">
+            <input type="text" name="cell128" id="cell128" value="cd ..">
         </div>
         
         <div class="cell">
             <div class="question">Lista su contenido</div>
-            <input type="text" name="cell129" id="cell129" value="">
+            <input type="text" name="cell129" id="cell129" value="ls">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -794,12 +794,12 @@ jpg/waterfall_long_exposure.jpg    tiff/rolled_fabric_stack.tiff
 
         <div class="cell">
             <div class="question">Crea una copia íntegra del directorio "document" llamada "docu" (Pista: opción -r)</div>
-            <input type="text" name="cell131" id="cell131" value="">
+            <input type="text" name="cell131" id="cell131" value="cp -r document docu">
         </div>
         
         <div class="cell">
             <div class="question">Lista el contenido de los directorios "txt", "rtf" y "xls" (situados dentro de "docu")</div>
-            <input type="text" name="cell132" id="cell132" value="">
+            <input type="text" name="cell132" id="cell132" value="ls docu/txt docu/rtf docu/xls">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -821,32 +821,32 @@ file_example_XLS_10.xls    sample1.xls
 
         <div class="cell">
             <div class="question">Crea cuatro directorios llamados samples1 samples2 samples3 samples4</div>
-            <input type="text" name="cell134" id="cell134" value="">
+            <input type="text" name="cell134" id="cell134" value="mkdir samples1 samples2 samples3 samples4">
         </div>
         
         <div class="cell">
             <div class="question">Copia el fichero "sample1.txt" (situado en "docu/txt")<br>al directorio "samples1"</div>
-            <input type="text" name="cell135" id="cell135" value="">
+            <input type="text" name="cell135" id="cell135" value="cp docu/txt/sample1.txt samples1">
         </div>
         
         <div class="cell">
             <div class="question">Copia el fichero "sample2.txt" (situado en "docu/txt")<br>al directorio "samples1", de forma que la nueva copia se llame "ejemplo2.txt"</div>
-            <input type="text" name="cell136" id="cell136" value="">
+            <input type="text" name="cell136" id="cell136" value="cp docu/txt/sample2.txt samples1/ejemplo2.txt">
         </div>
         
         <div class="cell">
             <div class="question">Mueve el fichero "sample3.txt" (situado en "docu/txt")<br>al directorio "samples1", de forma que ahora se llame "ejemplo3.txt"</div>
-            <input type="text" name="cell137" id="cell137" value="">
+            <input type="text" name="cell137" id="cell137" value="mv docu/txt/sample2.txt samples1/ejemplo3.txt">
         </div>
         
         <div class="cell">
             <div class="question">Mueve los ficheros cuyo nombre contenga la cadena "sample" (situados en "docu/rft")<br>al directorio "samples1"</div>
-            <input type="text" name="cell138" id="cell138" value="">
+            <input type="text" name="cell138" id="cell138" value="mv docu/rtf/*sample* samples1">
         </div>
         
         <div class="cell">
             <div class="question"></div>
-            <input type="text" name="cell139" id="cell139" value="">
+            <input type="text" name="cell139" id="cell139" value="ls samples1">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -859,12 +859,12 @@ ejemplo3.txt  file-sample_1MB.rtf    file-sample_500kB.rtf
 
         <div class="cell">
             <div class="question">Borra los ficheros del directorio "sample1" cuyo nombre contenga dos caracteres numéricos consecutivos</div>
-            <input type="text" name="cell141" id="cell141" value="">
+            <input type="text" name="cell141" id="cell141" value="rm samples1/*[0-9][0-9]*">
         </div>
         
         <div class="cell">
             <div class="question"></div>
-            <input type="text" name="cell142" id="cell142" value="">
+            <input type="text" name="cell142" id="cell142" value="ls samples1">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -876,12 +876,12 @@ ejemplo3.txt  file-sample_1MB.rtf    file-sample_500kB.rtf
 
         <div class="cell">
             <div class="question">Copia los ficheros que empiecen por f y acaben por .xls (situados en "docu/xls")<br>al directorio "samples2"</div>
-            <input type="text" name="cell144" id="cell144" value="">
+            <input type="text" name="cell144" id="cell144" value="cp docu/xls/f*.xls samples2">
         </div>
         
         <div class="cell">
             <div class="question"></div>
-            <input type="text" name="cell145" id="cell145" value="">
+            <input type="text" name="cell145" id="cell145" value="ls samples2">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -894,12 +894,12 @@ file_example_XLS_100.xls   file_example_XLS_5000.xls
 
         <div class="cell">
             <div class="question">Copia todos los ficheros situados en "samples1"<br>al directorio "samples2"</div>
-            <input type="text" name="cell147" id="cell147" value="">
+            <input type="text" name="cell147" id="cell147" value="cp samples1/* samples2">
         </div>
         
         <div class="cell">
             <div class="question"></div>
-            <input type="text" name="cell148" id="cell148" value="">
+            <input type="text" name="cell148" id="cell148" value="ls samples2">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -913,17 +913,17 @@ file_example_XLS_1000.xls  file_example_XLS_5000.xls  sample1.txt
 
         <div class="cell">
             <div class="question">Renombra el fichero "file_example_XLS_100.xls" en la carpeta "samples2"<br>para que pase a llamarse "ejemplo_100.xls"</div>
-            <input type="text" name="cell150" id="cell150" value="">
+            <input type="text" name="cell150" id="cell150" value="mv samples2/file_example_XLS_100.xls samples2/ejemplo_100.xls">
         </div>
         
         <div class="cell">
             <div class="question">Borra los ficheros cuyo nombre contenga las cadena "sample" o "example", situados en<br>el directorio "samples2"</div>
-            <input type="text" name="cell151" id="cell151" value="">
+            <input type="text" name="cell151" id="cell151" value="m samples2/*{sample,example}*">
         </div>
         
         <div class="cell">
             <div class="question"></div>
-            <input type="text" name="cell152" id="cell152" value="">
+            <input type="text" name="cell152" id="cell152" value="ls samples2">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -935,12 +935,12 @@ file_example_XLS_1000.xls  file_example_XLS_5000.xls  sample1.txt
 
         <div class="cell">
             <div class="question">Copia los ficheros cuyo nombre comience por "sample" que estén<br>situados en cualquier subdirectorio inmediato de "docu" (p.ej. docu/txt, docu/pdf, ...).<br>al directorio "samples3"</div>
-            <input type="text" name="cell154" id="cell154" value="">
+            <input type="text" name="cell154" id="cell154" value="cp docu/*/sample* samples3">
         </div>
         
         <div class="cell">
             <div class="question"></div>
-            <input type="text" name="cell155" id="cell155" value="">
+            <input type="text" name="cell155" id="cell155" value="ls samples3">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -955,12 +955,12 @@ sample1.txt   sample2.docx  sample2.xlsx  sample3.xlsx
 
         <div class="cell">
             <div class="question">Borra los ficheros de "samples3" cuyo nombre contenga el carácter x o el carácter f</div>
-            <input type="text" name="cell157" id="cell157" value="">
+            <input type="text" name="cell157" id="cell157" value="rm samples3/*[xf]*">
         </div>
         
         <div class="cell">
             <div class="question"></div>
-            <input type="text" name="cell158" id="cell158" value="">
+            <input type="text" name="cell158" id="cell158" value="ls samples3">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -972,12 +972,12 @@ sample1.txt   sample2.docx  sample2.xlsx  sample3.xlsx
 
         <div class="cell">
             <div class="question">Copia los ficheros cuyo nombre termine por "pdf" o "doc",<br>situados en cualquier subdirectorio inmediato de "docu", al directorio samples4</div>
-            <input type="text" name="cell160" id="cell160" value="">
+            <input type="text" name="cell160" id="cell160" value="p docu/*/*.{pdf,doc} samples4">
         </div>
         
         <div class="cell">
             <div class="question"></div>
-            <input type="text" name="cell161" id="cell161" value="">
+            <input type="text" name="cell161" id="cell161" value="ls samples4">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -991,12 +991,12 @@ file-sample_100kB.doc        file-sample_500kB.doc  sample2.doc
 
         <div class="cell">
             <div class="question">Copia los ficheros cuyo nombre empiece por "sample",<br>situados en los directorios "docx" o "xlsx" al directorio "samples4"</div>
-            <input type="text" name="cell163" id="cell163" value="">
+            <input type="text" name="cell163" id="cell163" value="cp docu/{docx,xlsx}/sample* samples4">
         </div>
         
         <div class="cell">
             <div class="question"></div>
-            <input type="text" name="cell164" id="cell164" value="">
+            <input type="text" name="cell164" id="cell164" value="ls samples4">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -1012,12 +1012,12 @@ file-sample_1MB.doc          sample1.xlsx           sample3.docx
 
         <div class="cell">
             <div class="question">Borra los ficheros de "samples4" que terminen en "docx" y contengan un carácter numérico menor que 4</div>
-            <input type="text" name="cell166" id="cell166" value="">
+            <input type="text" name="cell166" id="cell166" value="rm samples4/*[0-3]*.docx">
         </div>
         
         <div class="cell">
             <div class="question">Lista los ficheros de "samples4" que acaben en ".docx"</div>
-            <input type="text" name="cell167" id="cell167" value="">
+            <input type="text" name="cell167" id="cell167" value="ls samples4/*.docx">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -1029,12 +1029,12 @@ file-sample_1MB.doc          sample1.xlsx           sample3.docx
 
         <div class="cell">
             <div class="question">Mueve al directorio padre los ficheros de "samples4" cuyo nombre<br>contenga un carácter numérico seguido de una letra mayúscula o minúscula</div>
-            <input type="text" name="cell169" id="cell169" value="">
+            <input type="text" name="cell169" id="cell169" value="mv samples4/*[0-9][a-zA-Z]* ..">
         </div>
         
         <div class="cell">
             <div class="question">Lista los ficheros del directorio padre que empiecen por "file"</div>
-            <input type="text" name="cell170" id="cell170" value="">
+            <input type="text" name="cell170" id="cell170" value="ls ../file*">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -1047,7 +1047,7 @@ file-sample_1MB.doc          sample1.xlsx           sample3.docx
 
         <div class="cell">
             <div class="question">Lista el contenido del directorio "src" que hay dentro de "nano"<br>(Mira el árbol de directorios al principio del notebook para<br>averiguar la ruta relativa a "nano" desde "sample_files")</div>
-            <input type="text" name="cell172" id="cell172" value="">
+            <input type="text" name="cell172" id="cell172" value="ls ../nano/src">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -1062,17 +1062,17 @@ cut<span class="hljs-selector-class">.c</span>      help<span class="hljs-select
 
         <div class="cell">
             <div class="question">Crea un directorio llamado "source"</div>
-            <input type="text" name="cell174" id="cell174" value="">
+            <input type="text" name="cell174" id="cell174" value="mkdir source">
         </div>
         
         <div class="cell">
             <div class="question">Copia al directorio "source" los ficheros del directorio "src" que hay en "nano"<br>cuyo nombre acaba en ".h"</div>
-            <input type="text" name="cell175" id="cell175" value="">
+            <input type="text" name="cell175" id="cell175" value="cp ../nano/src/*.h source">
         </div>
         
         <div class="cell">
             <div class="question"></div>
-            <input type="text" name="cell176" id="cell176" value="">
+            <input type="text" name="cell176" id="cell176" value="ls source">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -1084,12 +1084,12 @@ cut<span class="hljs-selector-class">.c</span>      help<span class="hljs-select
 
         <div class="cell">
             <div class="question">Copia al directorio "source" los ficheros del directorio "src" que hay en "nano"<br>cuyo nombre empieza por "c" seguido de una vocal</div>
-            <input type="text" name="cell178" id="cell178" value="">
+            <input type="text" name="cell178" id="cell178" value="cp ../nano/src/c[aeiou]* source">
         </div>
         
         <div class="cell">
             <div class="question"></div>
-            <input type="text" name="cell179" id="cell179" value="">
+            <input type="text" name="cell179" id="cell179" value="ls source">
         </div>
         <div class="cell markdown"><p>SALIDA: </p>
 
@@ -1101,7 +1101,7 @@ cut<span class="hljs-selector-class">.c</span>      help<span class="hljs-select
 
         <div class="cell">
             <div class="question">Copia al directorio "source" los ficheros del directorio "src" que hay en "nano"<br>cuyo nombre contiene la cadena "to" o la cadena "pro", y acaben por ".c"</div>
-            <input type="text" name="cell181" id="cell181" value="">
+            <input type="text" name="cell181" id="cell181" value="cp ../nano/src/*{to,pro}*.c source">
         </div>
         
         <div class="cell">
@@ -1111,34 +1111,34 @@ cut<span class="hljs-selector-class">.c</span>      help<span class="hljs-select
         
         <div class="cell">
             <div class="question">Situáte en el directorio sample_files con su ruta absoluta</div>
-            <input type="text" name="cell183" id="cell183" value="">
+            <input type="text" name="cell183" id="cell183" value="cd /home/alumno/Descargas/ficheros_ejemplo/sample_files">
         </div>
         
         <div class="cell">
             <div class="question">Copia el contenido íntegro del directorio "video"  a un<br>nuevo directorio llamado "video-backup" situado en el mismo directorio</div>
-            <input type="text" name="cell184" id="cell184" value="">
+            <input type="text" name="cell184" id="cell184" value="cp -r video video-backup">
         </div>
         
         <div class="cell">
             <div class="question">Mueve al directorio "video" los ficheros que hay en su subdirectorio "mp4"<br>cuyo nombre comience por 'c' (NOTA: Utiliza comodines)</div>
-            <input type="text" name="cell185" id="cell185" value="">
+            <input type="text" name="cell185" id="cell185" value="mv video/mp4/c* video">
         </div>
         
         <div class="cell">
             <div class="question">Elimina los ficheros del directorio "video" que contengan la cadena "in". ¿Puedes?</div>
-            <input type="text" name="cell186" id="cell186" value="">
+            <input type="text" name="cell186" id="cell186" value="rm video/*in*">
         </div>
         <div class="cell markdown"><p>RESPUESTA (razonada): </p>
 </div>
 
         <div class="cell">
             <div class="question"></div>
-            <input type="text" name="cell188" id="cell188" value="">
+            <input type="text" name="cell188" id="cell188" value="Sí, ya que la orden rm elimina los ficheros que coinciden con el comodín a menos que algún resultado corresponda a un directorio, para lo cual serría necesario incluir la orden -r recursiva">
         </div>
         
         <div class="cell">
             <div class="question">lista el fichero cliff_waterfall.mp4 mostrado el tamaño de forma legible (puedes utilizar el comando man para encontrar las opciones correctas)</div>
-            <input type="text" name="cell189" id="cell189" value="">
+            <input type="text" name="cell189" id="cell189" value="ls -lh video/cliff_waterfall.mp4">
         </div>
         <div class="cell markdown"><p>SALIDA:</p>
 
@@ -1154,12 +1154,12 @@ cut<span class="hljs-selector-class">.c</span>      help<span class="hljs-select
 
         <div class="cell">
             <div class="question"></div>
-            <input type="text" name="cell192" id="cell192" value="">
+            <input type="text" name="cell192" id="cell192" value="depende del permiso de escritura configurado sobre el fichero">
         </div>
         
         <div class="cell">
             <div class="question">Renombra el directorio "video-backup" para que se llame "misvideos"</div>
-            <input type="text" name="cell193" id="cell193" value="">
+            <input type="text" name="cell193" id="cell193" value="mv video-backup misvideos">
         </div>
         <div class="cell markdown"><h1>3: Control de versiones</h1>
 </div>
